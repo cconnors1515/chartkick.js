@@ -366,6 +366,7 @@ let createDataTable = function (chart, options, chartType, library) {
     let dataset = {
       label: s.name || "",
       data: rows2[i],
+      hidden: s.hidden || false,
       fill: chartType === "area",
       borderColor: color,
       backgroundColor: backgroundColor,
